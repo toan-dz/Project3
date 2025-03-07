@@ -1,0 +1,283 @@
+/* 🌟 Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* 🌟 Container chung */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🌟 Header */
+.top-header {
+    background: #0056b3;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left .logo {
+    height: 50px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right span {
+    font-size: 14px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.search-box input {
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #0056b3;
+}
+
+/* 🌟 Nút đăng nhập/đăng ký */
+.auth-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-buttons {
+    position: relative;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-login {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-login a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-login a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Hiển thị dropdown khi hover */
+.auth-buttons:hover .dropdown-login {
+    display: block;
+}
+
+
+.btn-register {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-register:hover {
+    background: linear-gradient(135deg, #1e7e34, #155d27);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌟 Navbar */
+.navbar {
+    background: #343a40;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+/* 🌟 Slideshow */
+.slideshow-container img {
+    width: 100%;
+    height: 350px; /* Điều chỉnh chiều cao ảnh theo ý muốn */
+    object-fit: cover; /* Giữ tỷ lệ ảnh mà không bị méo */
+    border-radius: 5px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* 🌟 Footer */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* 🌟 Container chính */
+.about-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* 🌟 Tiêu đề chính */
+.about-container h2 {
+    font-size: 2.2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Mô tả chung */
+.about-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* 🌟 Lưới hiển thị nội dung */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* 🌟 Ô nội dung */
+.about-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+}
+
+/* 🌟 Ảnh minh họa */
+.about-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* 🌟 Tiêu đề mục */
+.about-item h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Nội dung mô tả */
+.about-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 🌟 Responsive */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.carousel {
+    max-width: 1800px; /* Điều chỉnh kích thước theo mong muốn */
+    margin: 0 auto; /* Căn giữa */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Điều chỉnh chiều cao tối đa */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
