@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    color: white;
+    border-radius: 0 0 15px 15px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-right span {
+    margin-left: 15px;
+    font-size: 0.9rem;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.welcome-text {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code img {
+    margin: 0 auto;
+}

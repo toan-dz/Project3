@@ -1,0 +1,40 @@
+body {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            max-width: 400px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            color: #28a745;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #28a745, #1e7e34);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            font-weight: bold;
+        }
+        .btn-success:hover {
+            background: linear-gradient(135deg, #1e7e34, #155d27);
+        }
+        .alert {
+            margin-top: 10px;
+            display: none;
+        }

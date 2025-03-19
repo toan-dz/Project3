@@ -9,12 +9,11 @@ public class NguoiDung {
     private String soDienThoai;
     private String email;
     private String diaChi;
-    private String ngayTao;
 
     public NguoiDung() {}
 
     public NguoiDung(int maNguoiDung, String hoTen, String taiKhoan, String matKhau, 
-                     String loaiNguoiDung, String soDienThoai, String email, String diaChi, String ngayTao) {
+                     String loaiNguoiDung, String soDienThoai, String email, String diaChi) {
         this.maNguoiDung = maNguoiDung;
         this.hoTen = hoTen;
         this.taiKhoan = taiKhoan;
@@ -23,7 +22,6 @@ public class NguoiDung {
         this.soDienThoai = soDienThoai;
         this.email = email;
         this.diaChi = diaChi;
-        this.ngayTao = ngayTao;
     }
 
     public int getMaNguoiDung() { return maNguoiDung; }
@@ -49,7 +47,4 @@ public class NguoiDung {
 
     public String getDiaChi() { return diaChi; }
     public void setDiaChi(String diaChi) { this.diaChi = diaChi; }
-
-    public String getNgayTao() { return ngayTao; }
-    public void setNgayTao(String ngayTao) { this.ngayTao = ngayTao; }
 }
